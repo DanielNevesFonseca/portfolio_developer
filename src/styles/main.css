@@ -1,0 +1,17 @@
+@import url('./reset.css');
+@import url('./vars.css');
+@import url('./navbar.css');
+@import url('./heroAboutSection.css');
+
+.container-display {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.main {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
