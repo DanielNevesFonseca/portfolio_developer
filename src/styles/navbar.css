@@ -9,6 +9,8 @@
     color: var(--white);
     height: 60px;
     font-family: var(--plus-jakarta-sans-font);
+    position: sticky;
+    top: 0;
 }
 
 .navbar-container {
