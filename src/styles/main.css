@@ -4,6 +4,8 @@
 @import url('./navbar.css');
 @import url('./heroAboutSection.css');
 @import url('./stackSection.css');
+@import url('./projectsSection.css');
+@import url('./badges.css');
 
 .container-display {
     margin: 0 auto;
