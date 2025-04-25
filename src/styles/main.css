@@ -6,6 +6,7 @@
 @import url('./stackSection.css');
 @import url('./projectsSection.css');
 @import url('./badges.css');
+@import url('./experienceSection.css');
 
 .container-display {
     margin: 0 auto;
