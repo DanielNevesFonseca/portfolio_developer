@@ -2,8 +2,8 @@
 
 .badge {
   display: inline-block;
-  padding: 10px 20px;
-  border: 1px solid var(--white);
+  padding: 6px 12px;
+  border: 1px solid var(--gradient-orange-start);
   border-radius: 12px;
   font-family: var(--plus-jakarta-sans-font);
   font-size: 0.75rem;
@@ -12,9 +12,7 @@
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-transform: uppercase;
+  background-color: var(--gradient-orange-start);
 }
 
-.badge:hover {
-  background-color: var(--gradient-orange-start);
-  border-color: var(--gradient-orange-start);
-}
