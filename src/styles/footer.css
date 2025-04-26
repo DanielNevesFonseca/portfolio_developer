@@ -20,3 +20,23 @@
   font-weight: 300;
   color: var(--secondary-text);
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+    gap: 10px;
+  }
+
+  .footer-container > p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-container > p {
+    font-size: 0.75rem;
+  }
+}
