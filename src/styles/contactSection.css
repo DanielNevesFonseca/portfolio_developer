@@ -33,7 +33,7 @@
 }
 
 .contact-email-box {
-  display:  flex;
+  display: flex;
   gap: 10px;
   align-items: center;
 }
@@ -51,8 +51,25 @@
   text-decoration: underline;
 }
 
-.contact-icon{
+.contact-icon {
   width: 20px;
   height: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.contact-social-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-social-box > a {
+  text-decoration: none;
+  color: var(--secondary-text);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-social-box > a > img {
+  width: 32px;
+  height: 32px;
 }

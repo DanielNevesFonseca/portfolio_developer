@@ -96,7 +96,7 @@
 }
 
 .projects-item-text-box > a:hover {
-  background-color: var(--gradient-blue-start);
+  background-color: var(--gradient-orange-start);
   border-radius: 12px;
   border-color: var(--white);
   scale: 1.05;
