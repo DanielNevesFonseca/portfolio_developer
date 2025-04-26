@@ -8,6 +8,7 @@
 @import url('./badges.css');
 @import url('./experienceSection.css');
 @import url('./contactSection.css');
+@import url('./footer.css');
 
 .container-display {
     margin: 0 auto;
