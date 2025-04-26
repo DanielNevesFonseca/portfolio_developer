@@ -1,0 +1,30 @@
+@import url("./reset.css");
+@import url("./vars.css");
+@import url("./buttons.css");
+@import url("./navbar.css");
+@import url("./heroAboutSection.css");
+@import url("./stackSection.css");
+@import url("./projectsSection.css");
+@import url("./badges.css");
+@import url("./experienceSection.css");
+@import url("./contactSection.css");
+@import url("./footer.css");
+
+.container-display {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 20px;
+}
+
+.body {
+  width: 100%;
+  min-height: 100dvh;
+  scroll-behavior: smooth;
+}
+
+.main {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
