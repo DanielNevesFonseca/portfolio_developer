@@ -73,3 +73,34 @@
   width: 32px;
   height: 32px;
 }
+
+@media (max-width: 768px) {
+  .contact-container {
+    gap: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-email-box > a {
+    font-size: 0.875rem;
+  }
+
+  .contact-social-box > a > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-social-box{
+    justify-content: center;
+  }
+
+  .contact-email-box > a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

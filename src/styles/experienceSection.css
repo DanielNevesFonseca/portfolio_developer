@@ -35,7 +35,6 @@
 }
 
 .experience-item {
-  max-height: 380px;
   border-radius: 24px;
   max-width: 100%;
   display: flex;
@@ -90,4 +89,29 @@
   font-family: var(--inter-font);
   font-weight: 300;
   line-height: 150%;
+}
+
+@media (max-width: 768px) {
+  .experience-list {
+    gap: 20px;
+  }
+
+  .experience-title {
+    font-size: 1.5rem;
+  }
+  .experience-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-item-header > p {
+    font-size: 1rem;
+  }
+
+  .experience-item-text-box > p {
+    font-size: 0.875rem;
+    text-align: justify;
+  }
 }

@@ -1,4 +1,4 @@
-@import url('./vars.css');
+@import url("./vars.css");
 
 .stack-section {
   background-color: var(--background-color-2);
@@ -60,11 +60,32 @@
   transition: all 0.3s ease-in-out;
 }
 
-.stack-item:hover > img{
+.stack-item:hover > img {
   transform: scale(1.1);
 }
 
 .stack-item:hover .legend {
   color: var(--white);
-} 
+}
 
+@media (max-width: 768px) {
+  .stack-list {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+
+  .stack-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stack-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .stack-title {
+    font-size: 0.875rem;
+  }
+}

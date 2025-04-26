@@ -22,21 +22,32 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+  }
+
   .footer-container {
-    gap: 10px;
+    gap: 15px;
   }
 
   .footer-container > p {
     font-size: 0.875rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
+  .footer {
+    padding: 10px 0;
+  }
+
   .footer-container {
-    padding: 10px;
+    gap: 10px;
+    padding: 0 10px;
   }
 
   .footer-container > p {
     font-size: 0.75rem;
+    text-align: center;
   }
 }

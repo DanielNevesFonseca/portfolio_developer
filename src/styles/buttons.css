@@ -39,3 +39,17 @@
   color: var(--white);
   border-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.75rem;
+  }
+}

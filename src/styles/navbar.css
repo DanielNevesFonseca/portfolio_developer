@@ -101,6 +101,6 @@
   }
 
   .navbar-mobile {
-    display: flex;
+    display: none;
   }
 }
