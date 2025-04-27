@@ -46,7 +46,6 @@
   color: var(--gradient-blue-start);
 }
 
-/* Hamburger menu styles */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -90,7 +89,6 @@
   border-bottom: none;
 } 
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .navbar {
     display: none;
@@ -104,3 +102,5 @@
     display: none;
   }
 }
+
+
