@@ -103,4 +103,20 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .navbar a {
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 480px) {
+  .navbar-mobile a {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .hamburger div {
+    width: 20px;
+    height: 2px;
+  }
+}

@@ -32,3 +32,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 1024px) {
+  .container-display {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-display {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-display {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
