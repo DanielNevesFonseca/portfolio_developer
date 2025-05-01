@@ -9,6 +9,7 @@
 @import url("./experienceSection.css");
 @import url("./contactSection.css");
 @import url("./footer.css");
+@import url("./form.css");
 
 .container-display {
   margin: 0 auto;

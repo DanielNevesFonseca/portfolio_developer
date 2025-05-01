@@ -13,6 +13,29 @@
   </script>
   <!-- Google tag (gtag.js) -->
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: 'BDHk6JZ3_PxfonCVD',
+        // Do not allow headless browsers
+        blockHeadless: true,
+        blockList: {
+          // Block the suspended emails
+          list: ['foo@emailjs.com', 'bar@emailjs.com'],
+          // The variable contains the email address
+          watchVariable: 'userEmail',
+        },
+        limitRate: {
+          // Set the limit rate for the application
+          id: 'app',
+          // Allow 1 request per 10s
+          throttle: 10000,
+        },
+      });
+    })();
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
@@ -345,7 +368,7 @@
                 <img src="./src/assets/kenzie.png" alt="Kenzie Academy" />
                 <p>Full Stack Monitor at Kenzie Academy</p>
               </div>
-              <p>11/2023 – 05/2024 </p>
+              <p>11/2023 - 05/2024</p>
             </div>
             <div class="experience-item-text-box">
               <p>
@@ -365,12 +388,24 @@
         <h2 class="contact-title">LET'S TALK</h2>
         <p class="contact-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be
           part of your vision.</p>
-        <div class="contact-email-box">
+
+        <form id="contactForm" class="contact-form">
+          <div class="contact-form-box">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="7" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+
+        <!-- <div class="contact-email-box">
           <img class="contact-icon" src="./src/assets/icons/email.svg" alt="Email" />
           <a
             href="mailto:daniel.neves.fonseca.work@gmail.com?subject=Job Proposing&cc=daniel.neves.fonseca@gmail.com&bcc=daniel.neves.fonseca@gmail.com&body=Hello Daniel N.F!">daniel.neves.fonseca.work@gmail.com
           </a>
-        </div>
+        </div> -->
+
         <div class="contact-social-box">
           <a href="https://www.linkedin.com/in/danielnevesfonseca" target="_blank" rel="noopener noreferrer">
             <img src="./src/assets/icons/LinkedIN_white.svg" alt="LinkedIn" />
@@ -392,5 +427,6 @@
 </body>
 
 <script defer src="./src/scripts/index.js"></script>
+
 
 </html>
