@@ -28,7 +28,7 @@ function handleFormSubmission() {
     event.preventDefault();
 
     const serviceID = "service_v05axca";
-    const templateID = "template_muhb22k";
+    const templateID = "template_tjc0l5f";
 
     emailjs.sendForm(serviceID, templateID, this).then(
       (response) => {
