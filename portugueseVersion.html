@@ -1,423 +1,551 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0TGS352Y5N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TGS352Y5N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-0TGS352Y5N");
+    </script>
+    <!-- Google tag (gtag.js) -->
 
-    gtag('config', 'G-0TGS352Y5N');
-  </script>
-  <!-- Google tag (gtag.js) -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "BDHk6JZ3_PxfonCVD",
+          blockHeadless: true,
+          blockList: {
+            list: ["foo@emailjs.com", "bar@emailjs.com"],
+            watchVariable: "userEmail",
+          },
+          limitRate: {
+            id: "app",
+            throttle: 10000,
+          },
+        });
+      })();
+    </script>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: 'BDHk6JZ3_PxfonCVD',
-        blockHeadless: true,
-        blockList: {
-          list: ['foo@emailjs.com', 'bar@emailjs.com'],
-          watchVariable: 'userEmail',
-        },
-        limitRate: {
-          id: 'app',
-          throttle: 10000,
-        },
-      });
-    })();
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daniel Neves Fonseca - Engenheiro de Software Full Stack especializado em construir sistemas eficientes e interfaces intuitivas com tecnologias modernas. Explore meu portfólio, projetos e experiência."
+    />
+    <meta
+      name="keywords"
+      content="Engenheiro Full Stack, Desenvolvedor de Software, Desenvolvimento Web, Frontend, Backend, React, Node.js, Portfólio, Daniel Neves Fonseca"
+    />
+    <meta name="author" content="Daniel Neves Fonseca" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Daniel Neves Fonseca - Engenheiro de Software Full Stack"
+    />
+    <meta
+      property="og:description"
+      content="Explore meu portfólio mostrando projetos, experiência e habilidades em tecnologias modernas de desenvolvimento web."
+    />
+    <meta property="og:image" content="./src/assets/myPhoto.jpeg" />
+    <meta
+      property="og:url"
+      content="https://danielnevesfonseca.github.io/portfolio_developer"
+    />
+    <meta property="og:type" content="website" />
+    <link href="./src/styles/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./src/assets/icons/favicon.png" />
+    <title>Daniel Neves Fonseca - Engenheiro de Software Full Stack</title>
+  </head>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Daniel Neves Fonseca - Engenheiro de Software Full Stack especializado em construir sistemas eficientes e interfaces intuitivas com tecnologias modernas. Explore meu portfólio, projetos e experiência." />
-  <meta name="keywords"
-    content="Engenheiro Full Stack, Desenvolvedor de Software, Desenvolvimento Web, Frontend, Backend, React, Node.js, Portfólio, Daniel Neves Fonseca" />
-  <meta name="author" content="Daniel Neves Fonseca" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Daniel Neves Fonseca - Engenheiro de Software Full Stack" />
-  <meta property="og:description"
-    content="Explore meu portfólio mostrando projetos, experiência e habilidades em tecnologias modernas de desenvolvimento web." />
-  <meta property="og:image" content="./src/assets/myPhoto.jpeg" />
-  <meta property="og:url" content="https://danielnevesfonseca.github.io/portfolio_developer" />
-  <meta property="og:type" content="website" />
-  <link href="./src/styles/main.css" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="./src/assets/icons/favicon.png" />
-  <title>Daniel Neves Fonseca - Engenheiro de Software Full Stack</title>
-</head>
-
-<body class="body">
-  <main class="main" id="home">
-    <header class="header" id="#">
-      <div class="container-display navbar-container">
-        <a href=""><img href="#home" src="./src/assets/mySignature.png" alt="logo dev" /></a>
-        <nav class="navbar">
-          <a href="#about">Sobre</a>
-          <a href="#stack">Tecnologias</a>
-          <a href="#projects">Projetos</a>
-          <a href="#experience">Experiência</a>
-          <a href="#lets-talk">Contato</a>
-          <a href="./index.html">
-            <img class="flag" src="./src/assets/icons/usa_flag.svg" alt="Inglês" />
+  <body class="body">
+    <main class="main" id="home">
+      <header class="header" id="#">
+        <div class="container-display navbar-container">
+          <a href="#home">
+            <img src="./src/assets/mySignature.png" alt="logo dev" />
           </a>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <nav class="navbar-mobile" id="mobileMenu">
-          <a href="#about">Sobre</a>
-          <a href="#stack">Tecnologias</a>
-          <a href="#projects">Projetos</a>
-          <a href="#experience">Experiência</a>
-          <a href="#lets-talk">Contato</a>
-          <a href="./index.html">
-            <img class="flag" src="./src/assets/icons/usa_flag.svg" alt="Inglês" />
-          </a>
-        </nav>
-      </div>
-    </header>
-
-    <section id="about" class="hero-section">
-      <div class="container-display hero-container">
-        <img class="hero-photo" src="./src/assets/myPhoto.jpeg" alt="Foto de Daniel" />
-        <h1 class="hero-title"><span class="emphasized">Engenheiro de Software Full Stack</span> dedicado à Excelência!</h1>
-        <h2 class="hero-subtitle">
-          Sou Daniel Neves Fonseca, um Engenheiro de Software Full Stack com mais de um ano de experiência
-          especializado em construir aplicações completas.
-        </h2>
-        <div class="hero-buttons">
-          <a href="./src/assets/docs/resume_pt.pdf" class="btn btn-primary" target="_blank"
-            rel="noopener noreferrer">Baixar Meu CV</a>
-          <a href="#lets-talk" class="btn btn-secondary">Vamos conversar</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="stack" class="stack-section section">
-      <div class="container-display stack-container">
-        <h2 class="stack-title">EXPERIÊNCIA COM</h2>
-        <ul class="stack-list">
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/html5.svg" alt="HTML" />
-            <legend class="legend">HTML</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/css3.svg" alt="CSS" />
-            <legend class="legend">CSS</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/typescript.svg" alt="Typescript" />
-            <legend class="legend">Typescript</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/js.svg" alt="Javascript" />
-            <legend class="legend">Javascript</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/reactjs.svg" alt="React.js" />
-            <legend class="legend">React.js</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/nextjs2.svg" alt="Next.js" />
-            <legend class="legend">Next.js</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/tailwindcss.svg" alt="TailwindCss" />
-            <legend class="legend">TailwindCss</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/bootstrap4.svg" alt="Bootstrap" />
-            <legend class="legend">Bootstrap</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/sass.svg" alt="Sass" />
-            <legend class="legend">Sass</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/git.svg" alt="Git" />
-            <legend class="legend">Git</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/github.svg" alt="Github" />
-            <legend class="legend">Github</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/jest.svg" alt="Jest" />
-            <legend class="legend">Jest</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/nestjs.svg" alt="Nest.js" />
-            <legend class="legend">Nest.js</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/nodejs.svg" alt="Node.js" />
-            <legend class="legend">Node.js</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/prisma.svg" alt="Prisma" />
-            <legend class="legend">Prisma</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/csharp.svg" alt="C#" />
-            <legend class="legend">C#</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/dotnet.svg" alt=".NET" />
-            <legend class="legend">.NET</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/python.svg" alt="Python" />
-            <legend class="legend">Python</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/django.svg" alt="Django" />
-            <legend class="legend">Django</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/docker.svg" alt="Docker" />
-            <legend class="legend">Docker</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/mysql.svg" alt="MySql" />
-            <legend class="legend">MySql</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/postgresql.svg" alt="PostgreSql" />
-            <legend class="legend">PostgreSql</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/sql_server.svg" alt="SQL Server" />
-            <legend class="legend">SQL Server</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/azure.svg" alt="Azure" />
-            <legend class="legend">Azure</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/wordpress.svg" alt="Wordpress" />
-            <legend class="legend">Wordpress</legend>
-          </li>
-          <li class="stack-item">
-            <img src="./src/assets/stack_icons/figma.svg" alt="Figma" />
-            <legend class="legend">Figma</legend>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-      <div class="container-display projects-container">
-        <h2 class="projects-title">PROJETOS</h2>
-
-        <ul class="projects-list">
-          <li class="projects-item-card">
-            <img src="./src/assets/card_images/copastur.png" alt="Gestão de Eventos Copastur" />
-            <div class="projects-item-text-box">
-              <div>
-                <h3 class="projects-item-title">Gestão de Eventos Copastur</h3>
-                <p class="projects-item-description">
-                  Sistema Web interno destinado a centralizar cotações de serviços para
-                  grandes eventos de grandes empresas, organizando o processo em múltiplas etapas.
-                </p>
-                <div class="projects-item-badge-box">
-                  <span class="badge">FrontEnd</span>
-                </div>
-              </div>
-              <a href="#home">
-                <img class="projects-item-icon" src="./src/assets/icons/arrow_diagonal.svg" alt="Seta Diagonal" />
-              </a>
-            </div>
-          </li>
-
-          <li class="projects-item-card">
-            <img src="./src/assets/card_images/my_account_ig.png" alt="Minha Conta iG" />
-            <div class="projects-item-text-box">
-              <div>
-                <h3 class="projects-item-title">Minha Conta iG</h3>
-                <p class="projects-item-description">
-                  Sistema Web projetado para centralizar todos os produtos e parceiros do iG,
-                  criando um hub de marketplace abrangente para
-                  clientes.
-                </p>
-                <div class="projects-item-badge-box">
-                  <span class="badge">FrontEnd</span>
-                </div>
-              </div>
-              <a href="#home">
-                <img class="projects-item-icon" src="./src/assets/icons/arrow_diagonal.svg" alt="Seta Diagonal" />
-              </a>
-            </div>
-          </li>
-
-          <li class="projects-item-card">
-            <img src="./src/assets/card_images/rh_seguro.png" alt="RH Seguro" />
-            <div class="projects-item-text-box">
-              <div>
-                <h3 class="projects-item-title">RH Seguro</h3>
-                <p class="projects-item-description">
-                  Site Institucional para uma empresa de RH, com integração de email.
-                </p>
-                <div class="projects-item-badge-box">
-                  <span class="badge">FrontEnd</span>
-                  <span class="badge">BackEnd</span>
-                </div>
-              </div>
-              <a href="https://rhseguro.com.br/" target="_blank" rel="noopener noreferrer">
-                <img class="projects-item-icon" src="./src/assets/icons/arrow_diagonal.svg" alt="Seta Diagonal" />
-              </a>
-            </div>
-          </li>
-
-          <li class="projects-item-card">
-            <img src="./src/assets/card_images/estaciona_bem.png" alt="EstacionaBem" />
-            <div class="projects-item-text-box">
-              <div>
-                <h3 class="projects-item-title">EstacionaBem</h3>
-                <p class="projects-item-description">
-                  Sistema de gestão de estacionamento, com funcionalidades para gerenciar estacionamentos, usuários e
-                  reservas.
-                </p>
-                <div class="projects-item-badge-box">
-                  <span class="badge">FrontEnd</span>
-                  <span class="badge">BackEnd</span>
-                </div>
-              </div>
-              <a href="#home">
-                <img class="projects-item-icon" src="./src/assets/icons/arrow_diagonal.svg" alt="Seta Diagonal" />
-              </a>
-            </div>
-          </li>
-
-          <li class="projects-item-card">
-            <img src="./src/assets/card_images/rh_plus.png" alt="RH Plus" />
-            <div class="projects-item-text-box">
-              <div>
-                <h3 class="projects-item-title">RH Plus</h3>
-                <p class="projects-item-description">
-                  Projeto de sistema para gerenciar controle de acesso de funcionários.
-                </p>
-                <div class="projects-item-badge-box">
-                  <span class="badge">FrontEnd</span>
-                </div>
-              </div>
-              <a href="#home">
-                <img class="projects-item-icon" src="./src/assets/icons/arrow_diagonal.svg" alt="Seta Diagonal" />
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="experience" class="experience-section">
-      <div class="container-display experience-container">
-        <h2 class="experience-title">EXPERIÊNCIA</h2>
-
-        <ul class="experience-list">
-          <li class="experience-item">
-            <div class="experience-item-header">
-              <div class="experience-item-header-box">
-                <img src="./src/assets/icons/rsp.png" alt="RSP Blue" />
-                <p>Engenheiro de Software Full Stack na RSP Blue</p>
-              </div>
-              <p>06/2024 - Atual</p>
-            </div>
-            <div class="experience-item-text-box">
-              <p>
-                Desenvolvi sistemas frontend e backend, incluindo prototipagem de interfaces web e mobile para múltiplos
-                projetos de empresas como: iG Corp, Copastur, Mundial Logistics.
-                Projetei e gerenciei campanhas de email marketing para melhorar a retenção de clientes.
-                Manipulei bancos de dados (DML) para fornecer suporte ao atendimento ao cliente e melhorias de
-                processos.
-                Criei landing pages para oferecer benefícios adicionais à assinatura de email do iG, visando manter a
-                base de clientes.
-                Refatorei código para adotar novos padrões de desenvolvimento, melhorando o desempenho das aplicações e
-                modernizando sistemas.
-              </p>
-            </div>
-          </li>
-
-          <li class="experience-item">
-            <div class="experience-item-header">
-              <div class="experience-item-header-box">
-                <img src="./src/assets/freelancer_logo.png" alt="Freelancer" />
-                <p>Engenheiro de Software Full Stack como Freelancer</p>
-              </div>
-              <p>02/2024 - Atual</p>
-            </div>
-            <div class="experience-item-text-box">
-              <p>
-                Desenvolvi sites institucionais, como RHSeguro.
-                Contribuí para a criação e desenvolvimento de sistemas web, incluindo: EstacionaBem, um sistema de
-                gestão de estacionamento; RH Plus, um sistema para gerenciamento de agendamento de funcionários e
-                controle de acesso; Ativo Pay, onde construí novas funcionalidades e componentes frontend.
-              </p>
-            </div>
-          </li>
-
-          <li class="experience-item">
-            <div class="experience-item-header">
-              <div class="experience-item-header-box">
-                <img src="./src/assets/kenzie.png" alt="Kenzie Academy" />
-                <p>Monitor Full Stack na Kenzie Academy</p>
-              </div>
-              <p>11/2023 - 05/2024</p>
-            </div>
-            <div class="experience-item-text-box">
-              <p>
-                Ofereci assistência aos alunos nos módulos de backend e frontend. Depurei e revisei projetos dos alunos.
-                Preparei relatórios sobre o desempenho técnico dos alunos. Conduzi sessões de mentoria para abordar
-                dúvidas e problemas via Slack.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="lets-talk" class="contact-section">
-      <div class="container-display contact-container">
-        <h2 class="contact-title">VAMOS CONVERSAR</h2>
-        <p class="contact-subtitle">
-          Estou disponível para entender as necessidades do seu projeto e propor as soluções que melhor se encaixam!
-        </p>
-
-        <form id="contactForm" class="contact-form">
-          <div class="contact-form-box">
-            <input type="text" name="name" placeholder="Nome" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <input type="text" name="subject" placeholder="Assunto" required />
-            <textarea name="message" rows="7" placeholder="Mensagem" required></textarea>
+          <nav class="navbar">
+            <a href="#about">Sobre</a>
+            <a href="#stack">Tecnologias</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#lets-talk">Contato</a>
+            <a href="./index.html">
+              <img
+                class="flag"
+                src="./src/assets/icons/usa_flag.svg"
+                alt="Inglês"
+              />
+            </a>
+          </nav>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-
-        <div class="contact-social-box">
-          <a href="https://www.linkedin.com/in/danielnevesfonseca" target="_blank" rel="noopener noreferrer">
-            <img src="./src/assets/icons/LinkedIN_white.svg" alt="LinkedIn" />
-          </a>
-          <a href="https://github.com/DanielNevesFonseca" target="_blank" rel="noopener noreferrer">
-            <img src="./src/assets/icons/Github_white.svg" alt="Github" />
-          </a>
+          <nav class="navbar-mobile" id="mobileMenu">
+            <a href="#about">Sobre</a>
+            <a href="#stack">Tecnologias</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#lets-talk">Contato</a>
+            <a href="./index.html">
+              <img
+                class="flag"
+                src="./src/assets/icons/usa_flag.svg"
+                alt="Inglês"
+              />
+            </a>
+          </nav>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <footer class="footer">
-      <div class="container-display footer-container">
-        <p>© 2024 Daniel Neves Fonseca. Todos os direitos reservados.</p>
-        <a href="#home" class="btn btn-secondary">Voltar ao topo</a>
-      </div>
-    </footer>
-  </main>
-</body>
+      <section id="about" class="hero-section">
+        <div class="container-display hero-container">
+          <img
+            class="hero-photo"
+            src="./src/assets/myPhoto.jpeg"
+            alt="Foto de Daniel"
+          />
+          <h1 class="hero-title">
+            <span class="emphasized">Engenheiro de Software Full Stack</span>
+            dedicado à Excelência!
+          </h1>
+          <h2 class="hero-subtitle">
+            Sou Daniel Neves Fonseca, um Engenheiro de Software Full Stack com
+            mais de um ano de experiência especializado em construir aplicações
+            completas.
+          </h2>
+          <div class="hero-buttons">
+            <a
+              href="./src/assets/docs/resume_pt.pdf"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Baixar Meu CV</a
+            >
+            <a href="#lets-talk" class="btn btn-secondary">Vamos conversar</a>
+          </div>
+        </div>
+      </section>
 
-<script defer src="./src/scripts/index.js"></script>
+      <section id="stack" class="stack-section section">
+        <div class="container-display stack-container">
+          <h2 class="stack-title">EXPERIÊNCIA COM</h2>
+          <ul class="stack-list">
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/html5.svg" alt="HTML" />
+              <legend class="legend">HTML</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/css3.svg" alt="CSS" />
+              <legend class="legend">CSS</legend>
+            </li>
+            <li class="stack-item">
+              <img
+                src="./src/assets/stack_icons/typescript.svg"
+                alt="Typescript"
+              />
+              <legend class="legend">Typescript</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/js.svg" alt="Javascript" />
+              <legend class="legend">Javascript</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/reactjs.svg" alt="React.js" />
+              <legend class="legend">React.js</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/nextjs2.svg" alt="Next.js" />
+              <legend class="legend">Next.js</legend>
+            </li>
+            <li class="stack-item">
+              <img
+                src="./src/assets/stack_icons/tailwindcss.svg"
+                alt="TailwindCss"
+              />
+              <legend class="legend">TailwindCss</legend>
+            </li>
+            <li class="stack-item">
+              <img
+                src="./src/assets/stack_icons/bootstrap4.svg"
+                alt="Bootstrap"
+              />
+              <legend class="legend">Bootstrap</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/sass.svg" alt="Sass" />
+              <legend class="legend">Sass</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/git.svg" alt="Git" />
+              <legend class="legend">Git</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/github.svg" alt="Github" />
+              <legend class="legend">Github</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/jest.svg" alt="Jest" />
+              <legend class="legend">Jest</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/nestjs.svg" alt="Nest.js" />
+              <legend class="legend">Nest.js</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/nodejs.svg" alt="Node.js" />
+              <legend class="legend">Node.js</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/prisma.svg" alt="Prisma" />
+              <legend class="legend">Prisma</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/csharp.svg" alt="C#" />
+              <legend class="legend">C#</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/dotnet.svg" alt=".NET" />
+              <legend class="legend">.NET</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/python.svg" alt="Python" />
+              <legend class="legend">Python</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/django.svg" alt="Django" />
+              <legend class="legend">Django</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/docker.svg" alt="Docker" />
+              <legend class="legend">Docker</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/mysql.svg" alt="MySql" />
+              <legend class="legend">MySql</legend>
+            </li>
+            <li class="stack-item">
+              <img
+                src="./src/assets/stack_icons/postgresql.svg"
+                alt="PostgreSql"
+              />
+              <legend class="legend">PostgreSql</legend>
+            </li>
+            <li class="stack-item">
+              <img
+                src="./src/assets/stack_icons/sql_server.svg"
+                alt="SQL Server"
+              />
+              <legend class="legend">SQL Server</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/azure.svg" alt="Azure" />
+              <legend class="legend">Azure</legend>
+            </li>
+            <li class="stack-item">
+              <img
+                src="./src/assets/stack_icons/wordpress.svg"
+                alt="Wordpress"
+              />
+              <legend class="legend">Wordpress</legend>
+            </li>
+            <li class="stack-item">
+              <img src="./src/assets/stack_icons/figma.svg" alt="Figma" />
+              <legend class="legend">Figma</legend>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <section id="projects" class="projects-section">
+        <div class="container-display projects-container">
+          <h2 class="projects-title">PROJETOS</h2>
+
+          <ul class="projects-list">
+            <li class="projects-item-card">
+              <img
+                src="./src/assets/card_images/copastur.png"
+                alt="Gestão de Eventos Copastur"
+              />
+              <div class="projects-item-text-box">
+                <div>
+                  <h3 class="projects-item-title">
+                    Gestão de Eventos Copastur
+                  </h3>
+                  <p class="projects-item-description">
+                    Sistema Web interno destinado a centralizar cotações de
+                    serviços para grandes eventos de grandes empresas,
+                    organizando o processo em múltiplas etapas.
+                  </p>
+                  <div class="projects-item-badge-box">
+                    <span class="badge">FrontEnd</span>
+                  </div>
+                </div>
+                <a href="#home">
+                  <img
+                    class="projects-item-icon"
+                    src="./src/assets/icons/arrow_diagonal.svg"
+                    alt="Seta Diagonal"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="projects-item-card">
+              <img
+                src="./src/assets/card_images/my_account_ig.png"
+                alt="Minha Conta iG"
+              />
+              <div class="projects-item-text-box">
+                <div>
+                  <h3 class="projects-item-title">Minha Conta iG</h3>
+                  <p class="projects-item-description">
+                    Sistema Web projetado para centralizar todos os produtos e
+                    parceiros do iG, criando um hub de marketplace abrangente
+                    para clientes.
+                  </p>
+                  <div class="projects-item-badge-box">
+                    <span class="badge">FrontEnd</span>
+                  </div>
+                </div>
+                <a href="#home">
+                  <img
+                    class="projects-item-icon"
+                    src="./src/assets/icons/arrow_diagonal.svg"
+                    alt="Seta Diagonal"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="projects-item-card">
+              <img
+                src="./src/assets/card_images/rh_seguro.png"
+                alt="RH Seguro"
+              />
+              <div class="projects-item-text-box">
+                <div>
+                  <h3 class="projects-item-title">RH Seguro</h3>
+                  <p class="projects-item-description">
+                    Site Institucional para uma empresa de RH, com integração de
+                    email.
+                  </p>
+                  <div class="projects-item-badge-box">
+                    <span class="badge">FrontEnd</span>
+                    <span class="badge">BackEnd</span>
+                  </div>
+                </div>
+                <a
+                  href="https://rhseguro.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="projects-item-icon"
+                    src="./src/assets/icons/arrow_diagonal.svg"
+                    alt="Seta Diagonal"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="projects-item-card">
+              <img
+                src="./src/assets/card_images/estaciona_bem.png"
+                alt="EstacionaBem"
+              />
+              <div class="projects-item-text-box">
+                <div>
+                  <h3 class="projects-item-title">EstacionaBem</h3>
+                  <p class="projects-item-description">
+                    Sistema de gestão de estacionamento, com funcionalidades
+                    para gerenciar estacionamentos, usuários e reservas.
+                  </p>
+                  <div class="projects-item-badge-box">
+                    <span class="badge">FrontEnd</span>
+                    <span class="badge">BackEnd</span>
+                  </div>
+                </div>
+                <a href="#home">
+                  <img
+                    class="projects-item-icon"
+                    src="./src/assets/icons/arrow_diagonal.svg"
+                    alt="Seta Diagonal"
+                  />
+                </a>
+              </div>
+            </li>
+
+            <li class="projects-item-card">
+              <img src="./src/assets/card_images/rh_plus.png" alt="RH Plus" />
+              <div class="projects-item-text-box">
+                <div>
+                  <h3 class="projects-item-title">RH Plus</h3>
+                  <p class="projects-item-description">
+                    Projeto de sistema para gerenciar controle de acesso de
+                    funcionários.
+                  </p>
+                  <div class="projects-item-badge-box">
+                    <span class="badge">FrontEnd</span>
+                  </div>
+                </div>
+                <a href="#home">
+                  <img
+                    class="projects-item-icon"
+                    src="./src/assets/icons/arrow_diagonal.svg"
+                    alt="Seta Diagonal"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section">
+        <div class="container-display experience-container">
+          <h2 class="experience-title">EXPERIÊNCIA</h2>
+
+          <ul class="experience-list">
+            <li class="experience-item">
+              <div class="experience-item-header">
+                <div class="experience-item-header-box">
+                  <img src="./src/assets/icons/rsp.png" alt="RSP Blue" />
+                  <p>Engenheiro de Software Full Stack na RSP Blue</p>
+                </div>
+                <p>06/2024 - Atual</p>
+              </div>
+              <div class="experience-item-text-box">
+                <p>
+                  Desenvolvi sistemas frontend e backend, incluindo prototipagem
+                  de interfaces web e mobile para múltiplos projetos de empresas
+                  como: iG Corp, Copastur, Mundial Logistics. Projetei e
+                  gerenciei campanhas de email marketing para melhorar a
+                  retenção de clientes. Manipulei bancos de dados (DML) para
+                  fornecer suporte ao atendimento ao cliente e melhorias de
+                  processos. Criei landing pages para oferecer benefícios
+                  adicionais à assinatura de email do iG, visando manter a base
+                  de clientes. Refatorei código para adotar novos padrões de
+                  desenvolvimento, melhorando o desempenho das aplicações e
+                  modernizando sistemas.
+                </p>
+              </div>
+            </li>
+
+            <li class="experience-item">
+              <div class="experience-item-header">
+                <div class="experience-item-header-box">
+                  <img
+                    src="./src/assets/freelancer_logo.png"
+                    alt="Freelancer"
+                  />
+                  <p>Engenheiro de Software Full Stack como Freelancer</p>
+                </div>
+                <p>02/2024 - Atual</p>
+              </div>
+              <div class="experience-item-text-box">
+                <p>
+                  Desenvolvi sites institucionais, como RHSeguro. Contribuí para
+                  a criação e desenvolvimento de sistemas web, incluindo:
+                  EstacionaBem, um sistema de gestão de estacionamento; RH Plus,
+                  um sistema para gerenciamento de agendamento de funcionários e
+                  controle de acesso; Ativo Pay, onde construí novas
+                  funcionalidades e componentes frontend.
+                </p>
+              </div>
+            </li>
+
+            <li class="experience-item">
+              <div class="experience-item-header">
+                <div class="experience-item-header-box">
+                  <img src="./src/assets/kenzie.png" alt="Kenzie Academy" />
+                  <p>Monitor Full Stack na Kenzie Academy</p>
+                </div>
+                <p>11/2023 - 05/2024</p>
+              </div>
+              <div class="experience-item-text-box">
+                <p>
+                  Ofereci assistência aos alunos nos módulos de backend e
+                  frontend. Depurei e revisei projetos dos alunos. Preparei
+                  relatórios sobre o desempenho técnico dos alunos. Conduzi
+                  sessões de mentoria para abordar dúvidas e problemas via
+                  Slack.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="lets-talk" class="contact-section">
+        <div class="container-display contact-container">
+          <h2 class="contact-title">VAMOS CONVERSAR</h2>
+          <p class="contact-subtitle">
+            Estou disponível para entender as necessidades do seu projeto e
+            propor as soluções que melhor se encaixam!
+          </p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="contact-form-box">
+              <input type="text" name="name" placeholder="Nome" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Assunto"
+                required
+              />
+              <textarea
+                name="message"
+                rows="7"
+                placeholder="Mensagem"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+
+          <div class="contact-social-box">
+            <a
+              href="https://www.linkedin.com/in/danielnevesfonseca"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./src/assets/icons/LinkedIN_white.svg" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://github.com/DanielNevesFonseca"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./src/assets/icons/Github_white.svg" alt="Github" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container-display footer-container">
+          <p>© 2024 Daniel Neves Fonseca. Todos os direitos reservados.</p>
+          <a href="#home" class="btn btn-secondary">Voltar ao topo</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script defer src="./src/scripts/index.js"></script>
 </html>
