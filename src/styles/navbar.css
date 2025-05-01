@@ -42,6 +42,11 @@
   transition: color 0.3s ease-in-out;
 }
 
+.navbar a img {
+  width: 40px;
+  height: 40px;
+}
+
 .navbar a:hover {
   color: var(--gradient-blue-start);
 }
@@ -83,6 +88,11 @@
   padding: 10px 0;
   text-align: center;
   margin: auto 0;
+}
+
+.navbar-mobile a img {
+  width: 32px;
+  height: 32px;
 }
 
 .navbar-mobile a:last-child {
