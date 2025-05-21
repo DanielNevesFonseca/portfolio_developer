@@ -9,6 +9,7 @@
 @import url("./experienceSection.css");
 @import url("./contactSection.css");
 @import url("./footer.css");
+@import url("./form.css");
 
 .container-display {
   margin: 0 auto;
@@ -31,4 +32,64 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.whatsAppButton {
+  background-color: var(--greenWhatsApp-color);
+  color: var(--white);
+  padding: 8px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  animation: bounce 2s infinite;
+  width: fit-content;
+}
+
+.whatsAppButton > img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-display {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-display {
+    max-width: 95%;
+  }
+
+  .whatsAppButton > img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-display {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .whatsAppButton > img {
+    width: 32px;
+    height: 32px;
+  }
 }

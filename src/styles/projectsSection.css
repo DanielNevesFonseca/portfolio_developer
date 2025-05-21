@@ -44,7 +44,7 @@
 
 .projects-item-card:hover {
   transform: scale(1.02);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px var(--gradient-orange-start);
 }
 
 .projects-item-card > img {
@@ -58,6 +58,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
+  margin: auto;
   gap: 10px;
 }
 
@@ -69,7 +70,7 @@
 }
 
 .projects-item-text-box > div .projects-item-description {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-family: var(--inter-font);
   font-weight: 400;
   line-height: 1.5;
@@ -79,8 +80,9 @@
 .projects-item-text-box > div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
-  flex: 11;
+  height: 100%;
 }
 
 .projects-item-text-box > a {
@@ -147,7 +149,7 @@
   }
 
   .projects-item-badge-box {
-    margin: auto  ;
+    margin: auto;
   }
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <!-- Google tag (gtag.js) -->
     <script
@@ -25,18 +25,13 @@
       (function () {
         emailjs.init({
           publicKey: "BDHk6JZ3_PxfonCVD",
-          // Do not allow headless browsers
           blockHeadless: true,
           blockList: {
-            // Block the suspended emails
             list: ["foo@emailjs.com", "bar@emailjs.com"],
-            // The variable contains the email address
             watchVariable: "userEmail",
           },
           limitRate: {
-            // Set the limit rate for the application
             id: "app",
-            // Allow 1 request per 10s
             throttle: 10000,
           },
         });
@@ -47,21 +42,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Daniel Neves Fonseca - Full Stack Software Engineer specializing in building efficient systems and intuitive interfaces with modern technologies. Explore my portfolio, projects, and experience."
+      content="Daniel Neves Fonseca - Engenheiro de Software Full Stack especializado em construir sistemas eficientes e interfaces intuitivas com tecnologias modernas. Explore meu portfólio, projetos e experiência."
     />
     <meta
       name="keywords"
-      content="Full Stack Engineer, Software Developer, Web Development, Frontend, Backend, React, Node.js, Portfolio, Daniel Neves Fonseca"
+      content="Engenheiro Full Stack, Desenvolvedor de Software, Desenvolvimento Web, Frontend, Backend, React, Node.js, Portfólio, Daniel Neves Fonseca"
     />
     <meta name="author" content="Daniel Neves Fonseca" />
     <meta name="robots" content="index, follow" />
     <meta
       property="og:title"
-      content="Daniel Neves Fonseca - Full Stack Software Engineer"
+      content="Daniel Neves Fonseca - Engenheiro de Software Full Stack"
     />
     <meta
       property="og:description"
-      content="Explore my portfolio showcasing projects, experience, and skills in modern web development technologies."
+      content="Explore meu portfólio mostrando projetos, experiência e habilidades em tecnologias modernas de desenvolvimento web."
     />
     <meta property="og:image" content="./src/assets/myPhoto.jpeg" />
     <meta
@@ -71,7 +66,7 @@
     <meta property="og:type" content="website" />
     <link href="./src/styles/main.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="./src/assets/icons/favicon.png" />
-    <title>Daniel Neves Fonseca - Full Stack Software Engineer</title>
+    <title>Daniel Neves Fonseca - Engenheiro de Software Full Stack</title>
   </head>
 
   <body class="body">
@@ -79,22 +74,22 @@
       <a href="https://wa.link/b2j84c" target="_blank" class="whatsAppButton">
         <img src="./src/assets/icons/whatsapp-white-icon.svg" alt="WhatsApp" />
       </a>
-      <header class="header" id="#home">
+      <header class="header" id="#">
         <div class="container-display navbar-container">
           <a href="#home">
             <img src="./src/assets/mySignature.png" alt="logo dev" />
           </a>
           <nav class="navbar">
-            <a href="#about">About</a>
-            <a href="#stack">Stack</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#lets-talk">Contact</a>
-            <a href="./portugueseVersion.html">
+            <a href="#about">Sobre</a>
+            <a href="#stack">Tecnologias</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#lets-talk">Contato</a>
+            <a href="./index.html">
               <img
                 class="flag"
-                src="./src/assets/icons/brazil_flag.svg"
-                alt="Português"
+                src="./src/assets/icons/usa_flag.svg"
+                alt="Inglês"
               />
             </a>
           </nav>
@@ -104,16 +99,16 @@
             <div></div>
           </div>
           <nav class="navbar-mobile" id="mobileMenu">
-            <a href="#about">About</a>
-            <a href="#stack">Stack</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#lets-talk">Contact</a>
-            <a href="./portugueseVersion.html">
+            <a href="#about">Sobre</a>
+            <a href="#stack">Tecnologias</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#lets-talk">Contato</a>
+            <a href="./index.html">
               <img
                 class="flag"
-                src="./src/assets/icons/brazil_flag.svg"
-                alt="Português"
+                src="./src/assets/icons/usa_flag.svg"
+                alt="Inglês"
               />
             </a>
           </nav>
@@ -125,33 +120,33 @@
           <img
             class="hero-photo"
             src="./src/assets/myPhoto.jpeg"
-            alt="Dan's photo"
+            alt="Foto de Daniel"
           />
           <h1 class="hero-title">
-            <span class="emphasized">Full Stack Software Engineer</span> with a
-            Passion for Excellence!
+            <span class="emphasized">Engenheiro de Software Full Stack</span>
+            dedicado à Excelência!
           </h1>
           <h2 class="hero-subtitle">
-            I'm Daniel Neves Fonseca, a skilled Full-Stack Software Engineer
-            with more than a year of experience specializing in building full
-            stack applications.
+            Sou Daniel Neves Fonseca, um Engenheiro de Software Full Stack com
+            mais de um ano de experiência especializado em construir aplicações
+            completas.
           </h2>
           <div class="hero-buttons">
             <a
-              href="./src/assets/docs/resume_en.pdf"
+              href="./src/assets/docs/resume_pt.pdf"
               class="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
-              >Download My CV</a
+              >Baixar Meu CV</a
             >
-            <a href="#lets-talk" class="btn btn-secondary">Let's talk</a>
+            <a href="#lets-talk" class="btn btn-secondary">Vamos conversar</a>
           </div>
         </div>
       </section>
 
       <section id="stack" class="stack-section section">
         <div class="container-display stack-container">
-          <h2 class="stack-title">EXPERIENCE WITH</h2>
+          <h2 class="stack-title">EXPERIÊNCIA COM</h2>
           <ul class="stack-list">
             <li class="stack-item">
               <img src="./src/assets/stack_icons/html5.svg" alt="HTML" />
@@ -206,7 +201,6 @@
               <img src="./src/assets/stack_icons/github.svg" alt="Github" />
               <legend class="legend">Github</legend>
             </li>
-
             <li class="stack-item">
               <img src="./src/assets/stack_icons/jest.svg" alt="Jest" />
               <legend class="legend">Jest</legend>
@@ -223,7 +217,6 @@
               <img src="./src/assets/stack_icons/prisma.svg" alt="Prisma" />
               <legend class="legend">Prisma</legend>
             </li>
-
             <li class="stack-item">
               <img src="./src/assets/stack_icons/csharp.svg" alt="C#" />
               <legend class="legend">C#</legend>
@@ -283,13 +276,13 @@
 
       <section id="projects" class="projects-section">
         <div class="container-display projects-container">
-          <h2 class="projects-title">PROJECTS</h2>
+          <h2 class="projects-title">PROJETOS</h2>
 
           <ul class="projects-list">
             <li class="projects-item-card">
               <img
                 src="./src/assets/card_images/copastur.png"
-                alt="Copastur Gestão de Eventos"
+                alt="Gestão de Eventos Copastur"
               />
               <div class="projects-item-text-box">
                 <div>
@@ -297,9 +290,9 @@
                     Gestão de Eventos Copastur
                   </h3>
                   <p class="projects-item-description">
-                    Internal Web system aimed at centralizing service quotations
-                    for large events, organizing the process into multiple
-                    stages.
+                    Sistema Web interno destinado a centralizar cotações de
+                    serviços para grandes eventos de grandes empresas,
+                    organizando o processo em múltiplas etapas.
                   </p>
                   <div class="projects-item-badge-box">
                     <span class="badge">FrontEnd</span>
@@ -309,7 +302,7 @@
                   <img
                     class="projects-item-icon"
                     src="./src/assets/icons/arrow_diagonal.svg"
-                    alt="Arrow Diagonal"
+                    alt="Seta Diagonal"
                   />
                 </a>
               </div>
@@ -318,15 +311,15 @@
             <li class="projects-item-card">
               <img
                 src="./src/assets/card_images/my_account_ig.png"
-                alt="My Account iG"
+                alt="Minha Conta iG"
               />
               <div class="projects-item-text-box">
                 <div>
                   <h3 class="projects-item-title">Minha Conta iG</h3>
                   <p class="projects-item-description">
-                    Web system designed to centralize all iG products and
-                    partners, creating a comprehensive marketplace hub for
-                    clients.
+                    Sistema Web projetado para centralizar todos os produtos e
+                    parceiros do iG, criando um hub de marketplace abrangente
+                    para clientes.
                   </p>
                   <div class="projects-item-badge-box">
                     <span class="badge">FrontEnd</span>
@@ -336,7 +329,7 @@
                   <img
                     class="projects-item-icon"
                     src="./src/assets/icons/arrow_diagonal.svg"
-                    alt="Arrow Diagonal"
+                    alt="Seta Diagonal"
                   />
                 </a>
               </div>
@@ -351,8 +344,8 @@
                 <div>
                   <h3 class="projects-item-title">RH Seguro</h3>
                   <p class="projects-item-description">
-                    Institutional Web Site for a HR Company, with email
-                    integration.
+                    Site Institucional para uma empresa de RH, com integração de
+                    email.
                   </p>
                   <div class="projects-item-badge-box">
                     <span class="badge">FrontEnd</span>
@@ -367,7 +360,7 @@
                   <img
                     class="projects-item-icon"
                     src="./src/assets/icons/arrow_diagonal.svg"
-                    alt="Arrow Diagonal"
+                    alt="Seta Diagonal"
                   />
                 </a>
               </div>
@@ -382,8 +375,8 @@
                 <div>
                   <h3 class="projects-item-title">EstacionaBem</h3>
                   <p class="projects-item-description">
-                    Parking management system, with functionalities for managing
-                    parking lots, users, and reservations.
+                    Sistema de gestão de estacionamento, com funcionalidades
+                    para gerenciar estacionamentos, usuários e reservas.
                   </p>
                   <div class="projects-item-badge-box">
                     <span class="badge">FrontEnd</span>
@@ -394,7 +387,7 @@
                   <img
                     class="projects-item-icon"
                     src="./src/assets/icons/arrow_diagonal.svg"
-                    alt="Arrow Diagonal"
+                    alt="Seta Diagonal"
                   />
                 </a>
               </div>
@@ -406,8 +399,8 @@
                 <div>
                   <h3 class="projects-item-title">RH Plus</h3>
                   <p class="projects-item-description">
-                    System projects to manage employee scheduling and access
-                    control.
+                    Projeto de sistema para gerenciar controle de acesso de
+                    funcionários.
                   </p>
                   <div class="projects-item-badge-box">
                     <span class="badge">FrontEnd</span>
@@ -417,7 +410,7 @@
                   <img
                     class="projects-item-icon"
                     src="./src/assets/icons/arrow_diagonal.svg"
-                    alt="Arrow Diagonal"
+                    alt="Seta Diagonal"
                   />
                 </a>
               </div>
@@ -428,29 +421,30 @@
 
       <section id="experience" class="experience-section">
         <div class="container-display experience-container">
-          <h2 class="experience-title">EXPERIENCE</h2>
+          <h2 class="experience-title">EXPERIÊNCIA</h2>
 
           <ul class="experience-list">
             <li class="experience-item">
               <div class="experience-item-header">
                 <div class="experience-item-header-box">
                   <img src="./src/assets/icons/rsp.png" alt="RSP Blue" />
-                  <p>Full Stack Software Engineer at RSP Blue</p>
+                  <p>Engenheiro de Software Full Stack na RSP Blue</p>
                 </div>
-                <p>06/2024 - Current</p>
+                <p>06/2024 - Atual</p>
               </div>
               <div class="experience-item-text-box">
                 <p>
-                  Developed frontend and backend systems, including prototyping
-                  of web and mobile interfaces for multiple projects for iG
-                  Corp, Copastur, Mundial Logistics. Designed and managed email
-                  marketing campaigns to enhance customer retention. Handled
-                  databases (DML) to provide support for customer service and
-                  process improvements. Created landing pages to offer
-                  additional benefits to the iG email subscription, aiming to
-                  maintain the customer base. Refactored code to adopt new
-                  development standards, improving application performance and
-                  modernizing systems.
+                  Desenvolvi sistemas frontend e backend, incluindo prototipagem
+                  de interfaces web e mobile para múltiplos projetos de empresas
+                  como: iG Corp, Copastur, Mundial Logistics. Projetei e
+                  gerenciei campanhas de email marketing para melhorar a
+                  retenção de clientes. Manipulei bancos de dados (DML) para
+                  fornecer suporte ao atendimento ao cliente e melhorias de
+                  processos. Criei landing pages para oferecer benefícios
+                  adicionais à assinatura de email do iG, visando manter a base
+                  de clientes. Refatorei código para adotar novos padrões de
+                  desenvolvimento, melhorando o desempenho das aplicações e
+                  modernizando sistemas.
                 </p>
               </div>
             </li>
@@ -462,18 +456,18 @@
                     src="./src/assets/freelancer_logo.png"
                     alt="Freelancer"
                   />
-                  <p>Full Stack Software Engineer as a Freelancer</p>
+                  <p>Engenheiro de Software Full Stack como Freelancer</p>
                 </div>
-                <p>02/2024 - Current</p>
+                <p>02/2024 - Atual</p>
               </div>
               <div class="experience-item-text-box">
                 <p>
-                  Developed institutional websites, such as RHSeguro.
-                  Contributed to the creation and development of web systems,
-                  including: EstacionaBem, a parking management system; RH Plus,
-                  a system for employee scheduling and access control
-                  management; Ativo Pay, where I built new frontend
-                  functionalities and components.
+                  Desenvolvi sites institucionais, como RHSeguro. Contribuí para
+                  a criação e desenvolvimento de sistemas web, incluindo:
+                  EstacionaBem, um sistema de gestão de estacionamento; RH Plus,
+                  um sistema para gerenciamento de agendamento de funcionários e
+                  controle de acesso; Ativo Pay, onde construí novas
+                  funcionalidades e componentes frontend.
                 </p>
               </div>
             </li>
@@ -482,16 +476,17 @@
               <div class="experience-item-header">
                 <div class="experience-item-header-box">
                   <img src="./src/assets/kenzie.png" alt="Kenzie Academy" />
-                  <p>Full Stack Monitor at Kenzie Academy</p>
+                  <p>Monitor Full Stack na Kenzie Academy</p>
                 </div>
                 <p>11/2023 - 05/2024</p>
               </div>
               <div class="experience-item-text-box">
                 <p>
-                  Provided assistance to students in backend and frontend
-                  modules. Debugged and reviewed students' projects. Prepared
-                  reports regarding students' technical performance. Conducted
-                  mentoring sessions to address questions and issues via Slack.
+                  Ofereci assistência aos alunos nos módulos de backend e
+                  frontend. Depurei e revisei projetos dos alunos. Preparei
+                  relatórios sobre o desempenho técnico dos alunos. Conduzi
+                  sessões de mentoria para abordar dúvidas e problemas via
+                  Slack.
                 </p>
               </div>
             </li>
@@ -501,38 +496,31 @@
 
       <section id="lets-talk" class="contact-section">
         <div class="container-display contact-container">
-          <h2 class="contact-title">LET'S TALK</h2>
+          <h2 class="contact-title">VAMOS CONVERSAR</h2>
           <p class="contact-subtitle">
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision.
+            Estou disponível para entender as necessidades do seu projeto e
+            propor as soluções que melhor se encaixam!
           </p>
 
           <form id="contactForm" class="contact-form">
             <div class="contact-form-box">
-              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="name" placeholder="Nome" required />
               <input type="email" name="email" placeholder="Email" required />
               <input
                 type="text"
                 name="subject"
-                placeholder="Subject"
+                placeholder="Assunto"
                 required
               />
               <textarea
                 name="message"
                 rows="7"
-                placeholder="Message"
+                placeholder="Mensagem"
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
-
-          <!-- <div class="contact-email-box">
-          <img class="contact-icon" src="./src/assets/icons/email.svg" alt="Email" />
-          <a
-            href="mailto:daniel.neves.fonseca.work@gmail.com?subject=Job Proposing&cc=daniel.neves.fonseca@gmail.com&bcc=daniel.neves.fonseca@gmail.com&body=Hello Daniel N.F!">daniel.neves.fonseca.work@gmail.com
-          </a>
-        </div> -->
 
           <div class="contact-social-box">
             <a
@@ -555,8 +543,8 @@
 
       <footer class="footer">
         <div class="container-display footer-container">
-          <p>© 2024 Daniel Neves Fonseca. All rights reserved.</p>
-          <a href="#home" class="btn btn-secondary">Back to top</a>
+          <p>© 2024 Daniel Neves Fonseca. Todos os direitos reservados.</p>
+          <a href="#home" class="btn btn-secondary">Voltar ao topo</a>
         </div>
       </footer>
     </main>
